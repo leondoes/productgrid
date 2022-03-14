@@ -7,20 +7,34 @@ const ProductCard = () => {
   const currency = region === "Canada" ? "cad" : "usd";
 
   const imageUrl = productData[0].images[0];
+
+  const [currentImage, setCurrentImage] = useState(imageUrl);
+
   const name = productData[0].name;
   const sku = productData[0].Id;
   const price = productData[0].price[currency];
   const inStock = productData[0].inventory > 0 ? "inStock" : "Out Of stock";
 
+  const addToCartOnClick = () => alert(`hi, this ${name} and I cost $${price}`);
+
+  const changeImageOnMouseEnter = () =>
+    setCurrentImage(() => productData[0].images[1]);
+  const changeImageOnMouseLeave = () =>
+    setCurrentImage(() => productData[0].images[0]);
+
   return (
-    <>
-      <img class="ProductImage" src={imageUrl} alt="scooter" />
+    <div
+      class="prod1"
+      onMouseEnter={changeImageOnMouseEnter}
+      onMouseLeave={changeImageOnMouseLeave}
+    >
+      <img class="ProductImage" src={currentImage} alt="scooter" />
       <div>{name}</div>
       <div>{sku}</div>
       <div>${price}</div>
       <div>{inStock}</div>
-      <button>addtocart</button>
-    </>
+      <button onClick={addToCartOnClick}>addtocart</button>
+    </div>
   );
 };
 

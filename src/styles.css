@@ -4,9 +4,13 @@
 }
 
 .prod1 {
-  background: grey;
   height: 500px;
   width: 300px;
+}
+
+.prod1:hover {
+  border: 1px solid grey;
+  margin: -1px;
 }
 
 .prod2 {

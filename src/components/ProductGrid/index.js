@@ -4,9 +4,8 @@ import ProductCard from "/src/components/ProductCard";
 const ProductGrid = () => {
   return (
     <div class="gridContainer">
-      <div class="prod1">
-        <ProductCard />
-      </div>
+      <ProductCard />
+
       <div class="prod2"></div>
       <div class="prod3"></div>
       <div class="prod3"></div>
