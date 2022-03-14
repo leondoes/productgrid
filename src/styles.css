@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.prod1 {
+  background: grey;
+  height: 500px;
+  width: 300px;
+}
+
+.prod2 {
+  background: green;
+  height: 500px;
+  width: 300px;
+}
+
+.prod3 {
+  background: blue;
+  height: 500px;
+  width: 300px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template: 500px / 300px 300px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.ProductImage {
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+}
+
+@media (min-width: 800px) {
+  .gridContainer {
+    grid-template: 500px / 300px 300px 300px;
+  }
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
