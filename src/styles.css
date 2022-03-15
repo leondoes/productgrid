@@ -1,5 +1,11 @@
+@font-face {
+  font-family: inter;
+  src: url(https://fonts.gstatic.com/s/inter/v8/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2);
+  font-weight: 400;
+}
+
 .App {
-  font-family: sans-serif;
+  font-family: inter;
   text-align: center;
 }
 
@@ -9,7 +15,7 @@
 }
 
 .prod1:hover {
-  border: 1px solid grey;
+  border: 1px solid rgba(121, 129, 120, 0.4);
   margin: -1px;
 }
 
