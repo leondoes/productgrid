@@ -13,7 +13,8 @@ const ProductCard = () => {
   const name = productData[0].name;
   const sku = productData[0].Id;
   const price = productData[0].price[currency];
-  const inStock = productData[0].inventory > 0 ? "inStock" : "Out Of stock";
+  const inStock =
+    productData[0].inventory > 0 ? "✅In-stock" : "❌not available in store";
 
   const addToCartOnClick = () => alert(`hi, this ${name} and I cost $${price}`);
 
@@ -29,10 +30,10 @@ const ProductCard = () => {
       onMouseLeave={changeImageOnMouseLeave}
     >
       <img class="ProductImage" src={currentImage} alt="scooter" />
-      <div>{name}</div>
-      <div>{sku}</div>
-      <div>${price}</div>
-      <div>{inStock}</div>
+      <div class="titleStyle">{name}</div>
+      <div class="skuStyle">#{sku}</div>
+      <div class="priceStyle">${price}</div>
+      <div class="stockStyle">{inStock}</div>
       <button onClick={addToCartOnClick}>addtocart</button>
     </div>
   );
