@@ -15,18 +15,6 @@
   margin: -1px;
 }
 
-.prod2 {
-  background: green;
-  height: 500px;
-  width: 300px;
-}
-
-.prod3 {
-  background: blue;
-  height: 500px;
-  width: 300px;
-}
-
 .gridContainer {
   display: grid;
   grid-template: 500px / 300px 300px;

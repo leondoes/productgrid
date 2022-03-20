@@ -1,16 +1,14 @@
 import react, { useState } from "react";
 import ProductCard from "/src/components/ProductCard";
 
+import productData from "/src/data.js";
+
 const ProductGrid = () => {
   return (
     <div class="gridContainer">
-      <ProductCard />
-
-      <div class="prod2"></div>
-      <div class="prod3"></div>
-      <div class="prod3"></div>
-      <div class="prod1"></div>
-      <div class="prod2"></div>
+      {productData.map((product) => (
+        <ProductCard ass="ass" productDetails={product} />
+      ))}
     </div>
   );
 };
