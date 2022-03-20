@@ -1,4 +1,5 @@
 import react, { useState } from "react";
+import { Price, Sku } from "./styled";
 
 import productData from "/src/data.js";
 
@@ -31,8 +32,8 @@ const ProductCard = () => {
     >
       <img class="ProductImage" src={currentImage} alt="scooter" />
       <div class="titleStyle">{name}</div>
-      <div class="skuStyle">#{sku}</div>
-      <div class="priceStyle">${price}</div>
+      <Sku>#{sku}</Sku>
+      <Price>${price}</Price>
       <div class="stockStyle">{inStock}</div>
       <button onClick={addToCartOnClick}>addtocart</button>
     </div>
