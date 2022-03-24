@@ -1,5 +1,5 @@
 import react, { useState } from "react";
-import { Price, Sku } from "./styled";
+import { Price, Sku, Title, Stock, CartButton } from "./styled";
 
 const ProductCard = ({ productDetails }) => {
   const {
@@ -18,7 +18,7 @@ const ProductCard = ({ productDetails }) => {
   const [currentImage, setCurrentImage] = useState(imageUrl);
 
   const price = priceObject[currency];
-  const inStock = inventory > 0 ? "✅In-stock" : "❌not available in store";
+  const inStock = inventory > 0 ? "✅ In-stock" : "❌ not available in store";
 
   const addToCartOnClick = () => alert(`hi, this ${name} and I cost $${price}`);
 
@@ -32,11 +32,16 @@ const ProductCard = ({ productDetails }) => {
       onMouseLeave={changeImageOnMouseLeave}
     >
       <img class="ProductImage" src={currentImage} alt="scooter" />
-      <div class="titleStyle">{name}</div>
+      <Title>{name}</Title>
       <Sku>#{sku}</Sku>
       <Price>${price}</Price>
-      <div class="stockStyle">{inStock}</div>
-      <button onClick={addToCartOnClick}>addtocart</button>
+      <Stock>{inStock}</Stock>
+      <CartButton onClick={addToCartOnClick}>
+        <span role="img" aria-label="add to cart" alt="cart">
+          🛒
+        </span>{" "}
+        ADD TO CART
+      </CartButton>
     </div>
   );
 };

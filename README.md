@@ -6,11 +6,7 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 
 Style fixes:
 
-- Fix padding-left on all
-- add some padding-bottom to in-stock
-- add space between in-stock and checkmark + X-mark
-- Style addToCart + icon within the button
-- add hover to addtocart
+- Add image style component
 - Add styled components to all (get rid of styles.css)
 
 Future TODOS:
