@@ -36,12 +36,20 @@ export const CartButton = styled.div`
   font-weight: 500;
   cursor: pointer;
   color: rgba(0, 97, 35, 255);
-  font-size: 21px;
+  font-size: 20px;
   text-decoration: none;
   background-color: Transparent;
   background-repeat: no-repeat;
-  border: none;
+  display: inline-block;
+  margin-top: 80px;
   &:hover {
     color: rgba(28, 150, 73, 255);
   }
+`;
+
+export const ProductImage = styled.div`
+  object-fit: cover;
+  margin-top: 10px;
+  width: 200px;
+  height: 150px;
 `;

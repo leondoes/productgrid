@@ -1,5 +1,5 @@
 import react, { useState } from "react";
-import { Price, Sku, Title, Stock, CartButton } from "./styled";
+import { Price, Sku, Title, Stock, CartButton, ProductImage } from "./styled";
 
 const ProductCard = ({ productDetails }) => {
   const {
