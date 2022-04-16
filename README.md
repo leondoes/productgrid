@@ -6,13 +6,24 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 
 Future TODOS:
 
+Bugs:
+
+- fix fonts on PLP
+
 - Homepage
-- refactor PLP
-- create PDP
+  - Add an AD to the homepage
+- Navbar
+  - make collapsible as you scroll
+  - Make sticky
+  - style it
+  - add more pages, even if blank
+- PLP
+  - Add in-stock filter
+- create PDP product details page
 - floating cart with #s, "addtocard" adds in there
 - drawer modal for cart
 - "enter checkout" from cart
-- create "navbar", make it collapsible!
+
 - with sub-menu
 - create profile
 - Sign-in, sign-up
