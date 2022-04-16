@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import "./styles.css";
-
-import ProductGrid from "/src/components/ProductGrid";
+import PageLayout from "/src/layout/PageLayout";
 
 const AppContainer = styled.div`
   font-family: Roboto;
@@ -11,7 +10,8 @@ const AppContainer = styled.div`
 export default function App() {
   return (
     <AppContainer>
-      <ProductGrid />
+      <PageLayout />
+      <div>homepage - welcome to our shop</div>
     </AppContainer>
   );
 }

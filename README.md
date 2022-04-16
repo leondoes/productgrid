@@ -4,11 +4,6 @@ Created with CodeSandbox
 
 https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=LIT_Playing2021Spring_ScootersSkateboardsHoverboards_SportsRecDLP_en
 
-Style fixes:
-
-- Add image style component
-- Add styled components to all (get rid of styles.css)
-
 Future TODOS:
 
 - Homepage
