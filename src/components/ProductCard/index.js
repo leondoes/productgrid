@@ -1,5 +1,13 @@
-import react, { useState } from "react";
-import { Price, Sku, Title, Stock, CartButton, ProductImage } from "./styled";
+import React, { useState } from "react";
+import {
+  Price,
+  Sku,
+  Title,
+  Stock,
+  CartButton,
+  ProductImage,
+  ProductCardContainer
+} from "./styled";
 
 const ProductCard = ({ productDetails }) => {
   const {
@@ -26,12 +34,11 @@ const ProductCard = ({ productDetails }) => {
   const changeImageOnMouseLeave = () => setCurrentImage(() => images[0]);
 
   return (
-    <div
-      class="prod1"
+    <ProductCardContainer
       onMouseEnter={changeImageOnMouseEnter}
       onMouseLeave={changeImageOnMouseLeave}
     >
-      <img class="ProductImage" src={currentImage} alt="scooter" />
+      <ProductImage src={currentImage} alt="scooter" />
       <Title>{name}</Title>
       <Sku>#{sku}</Sku>
       <Price>${price}</Price>
@@ -42,7 +49,7 @@ const ProductCard = ({ productDetails }) => {
         </span>{" "}
         ADD TO CART
       </CartButton>
-    </div>
+    </ProductCardContainer>
   );
 };
 

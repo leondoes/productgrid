@@ -31,7 +31,7 @@ export const Stock = styled.div`
   margin-bottom: 40px;
 `;
 
-export const CartButton = styled.div`
+export const CartButton = styled.button`
   font-family: Roboto;
   font-weight: 500;
   cursor: pointer;
@@ -42,14 +42,24 @@ export const CartButton = styled.div`
   background-repeat: no-repeat;
   display: inline-block;
   margin-top: 80px;
+  border: 0;
   &:hover {
     color: rgba(28, 150, 73, 255);
   }
 `;
 
-export const ProductImage = styled.div`
+export const ProductImage = styled.img`
   object-fit: cover;
   margin-top: 10px;
   width: 200px;
   height: 150px;
+`;
+
+export const ProductCardContainer = styled.div`
+  height: 500px;
+  width: 300px;
+  &:hover {
+    border: 1px solid rgba(121, 129, 120, 0.4);
+    margin: -1px;
+  }
 `;
