@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import NavBar from "/src/components/NavBar";
 
 const Container = styled.div`

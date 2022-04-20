@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavbarStyle, StyledLink } from "./styled";
 
 const NavBar = () => (
-  <div>
-    <Link to="/">Home</Link>
-    <Link to="/ProductListPage">Product List Page</Link>
-  </div>
+  <NavbarStyle>
+    <StyledLink to="/">Home</StyledLink>
+    <StyledLink to="/ProductListPage">Product List Page</StyledLink>
+    <StyledLink to="/Wishlist"> Wishlist</StyledLink>
+    <StyledLink to="/Flyer"> Flyer</StyledLink>
+    <StyledLink to="/cart"> Cart</StyledLink>
+  </NavbarStyle>
 );
 
 export default NavBar;
