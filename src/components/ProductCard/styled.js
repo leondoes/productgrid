@@ -20,11 +20,12 @@ export const Title = styled.div`
   font-size: 18px;
   text-align: left;
   margin-left: 20px;
+  margin-top: 40px;
 `;
 
 export const Stock = styled.div`
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
   text-align: left;
   margin-top: 40px;
   margin-left: 20px;
@@ -41,7 +42,8 @@ export const CartButton = styled.button`
   background-color: Transparent;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-top: 80px;
+  margin-top: 45px;
+  margin-left: 20px;
   border: 0;
   &:hover {
     color: rgba(28, 150, 73, 255);
@@ -49,6 +51,9 @@ export const CartButton = styled.button`
 `;
 
 export const ProductImage = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   object-fit: cover;
   margin-top: 10px;
   width: 200px;

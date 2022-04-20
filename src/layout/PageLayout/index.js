@@ -4,7 +4,8 @@ import styled from "styled-components";
 import NavBar from "/src/components/NavBar";
 
 const Container = styled.div`
-  color: red;
+  font-family: Roboto;
+  text-align: center;
 `;
 
 const PageLayout = ({ children, ...props }) => {

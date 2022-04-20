@@ -8,8 +8,6 @@ Future TODOS:
 
 Bugs:
 
-- fix fonts on PLP
-
 - Homepage
   - Add an AD to the homepage
 - Navbar
