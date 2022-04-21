@@ -3,6 +3,7 @@ import "./styles.css";
 import PageLayout from "/src/layout/PageLayout";
 
 const AppContainer = styled.div`
+  margin-top: 50px;
   font-family: Roboto;
   text-align: center;
 `;

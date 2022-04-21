@@ -1,11 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+import { Container } from "./styled";
 import NavBar from "/src/components/NavBar";
-
-const Container = styled.div`
-  font-family: Roboto;
-  text-align: center;
-`;
 
 const PageLayout = ({ children, ...props }) => {
   return (
