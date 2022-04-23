@@ -16,7 +16,7 @@ const ProductGrid = () => {
       */
     <GridContainer>
       {productData.map((product) => (
-        <ProductCard productDetails={product} />
+        <ProductCard key={`card-${product.Id}`} productDetails={product} />
       ))}
     </GridContainer>
   );
