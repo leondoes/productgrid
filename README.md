@@ -6,12 +6,20 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 
 Future TODOS:
 
+Bug:
+
+- PDP page crops off at 850px
+
 - Homepage
   - Add an AD to the homepage
 - Navbar
-  - make collapsible as you scroll
+  - add search bar
+  - add logo
+  - add hamburger menu
+  - add dropdown menus
+  - add enterprise bar
 - PLP
-  - Add in-stock filter
+  - Style in-stock filter
 - create PDP product details page
 - floating cart with #s, "addtocard" adds in there
 - drawer modal for cart
