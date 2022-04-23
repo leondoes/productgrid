@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { navBarHeight } from "/src/components/NavBar/styled";
 
 export const PageContainer = styled.div`
   font-family: Roboto;
@@ -8,5 +9,5 @@ export const PageContainer = styled.div`
 export const ContentContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 50px; /* take into account navbar height */
+  padding-top: ${navBarHeight + "px"}; /* take into account navbar height */
 `;
