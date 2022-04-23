@@ -6,5 +6,6 @@ export const Container = styled.div`
   position: absolute;
   top: 50px;
   bottom: 0;
+
   overflow-y: auto;
 `;

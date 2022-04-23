@@ -7,6 +7,7 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 Future TODOS:
 
 Bugs:
+-Scroll bar wont stick to right wall and displays under navbar. Bug was introduced when trying to fix scroll bar from moving navbar when showing on page.
 
 - Homepage
   - Add an AD to the homepage
@@ -14,7 +15,6 @@ Bugs:
   - make collapsible as you scroll
   - Make sticky
   - style it
-  - add more pages, even if blank
 - PLP
   - Add in-stock filter
 - create PDP product details page
