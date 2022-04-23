@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const PageContainer = styled.div`
   font-family: Roboto;
   text-align: center;
-  position: absolute;
-  top: 50px;
-  bottom: 0;
+`;
 
-  overflow-y: auto;
+export const ContentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 50px; /* take into account navbar height */
 `;

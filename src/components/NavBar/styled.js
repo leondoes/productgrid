@@ -7,12 +7,9 @@ export const NavbarStyled = styled.div`
   border-bottom: 1px solid #f7dadc;
   display: flex;
   justify-content: space-evenly;
-  padding: 0.7rem 2rem;
+  align-items: center;
   width: 100%;
-
-  top: 0;
-  right: 0;
-  left: 0;
+  height: 49px;
 `;
 
 export const StyledLink = styled(Link)`

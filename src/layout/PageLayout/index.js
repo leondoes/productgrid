@@ -1,13 +1,13 @@
 import React from "react";
-import { Container } from "./styled";
+import { PageContainer, ContentContainer } from "./styled";
 import NavBar from "/src/components/NavBar";
 
 const PageLayout = ({ children, ...props }) => {
   return (
-    <Container {...props}>
+    <PageContainer {...props}>
       <NavBar />
-      {children}
-    </Container>
+      <ContentContainer>{children}</ContentContainer>
+    </PageContainer>
   );
 };
 

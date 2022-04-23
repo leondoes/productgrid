@@ -1,18 +1,13 @@
-import styled from "styled-components";
 import "./styles.css";
 import PageLayout from "/src/layout/PageLayout";
 
-const AppContainer = styled.div`
-  margin-top: 50px;
-  font-family: Roboto;
-  text-align: center;
-`;
+// remove default margin on <body>
+document.body.style.margin = 0;
 
-export default function App() {
-  return (
-    <AppContainer>
-      <PageLayout />
-      <div>homepage - welcome to our shop</div>
-    </AppContainer>
-  );
-}
+const App = () => (
+  <PageLayout>
+    <div>homepage - welcome to our shop</div>
+  </PageLayout>
+);
+
+export default App;
