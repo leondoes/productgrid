@@ -3,6 +3,7 @@ import PageLayout from "/src/layout/PageLayout";
 import ProductGrid from "/src/components/ProductGrid";
 import FilterButtons from "/src/components/FilterButtons";
 import { ListPageContainer } from "./styled";
+import FilterSwitch from "/src/components/FilterSwitch";
 
 import productData from "/src/data.js";
 
@@ -29,6 +30,7 @@ const ProductListPage = () => {
   return (
     <PageLayout>
       <ListPageContainer>
+        <FilterSwitch handleOnClickFilterInStock={handleOnClickFilterInStock} />
         <FilterButtons
           handleOnClickFilterInStock={handleOnClickFilterInStock}
           inStockSwitch={inStockSwitch}

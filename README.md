@@ -8,6 +8,7 @@ Future TODOS:
 
 Bug:
 
+- New Filter switch wont go behind navbar
 - PDP page crops off at 850px
 
 - Homepage
@@ -19,7 +20,6 @@ Bug:
   - add dropdown menus
   - add enterprise bar
 - PLP
-  - Style in-stock filter
 - create PDP product details page
 - floating cart with #s, "addtocard" adds in there
 - drawer modal for cart
