@@ -8,16 +8,16 @@ import FilterSwitch from "/src/components/FilterSwitch";
 import productData from "/src/data.js";
 
 const ProductListPage = () => {
-  const [inStockSwitch, setInStockSwitch] = useState(false);
+  const [inStockSwitchActive, setInStockSwitchActive] = useState(false);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   const handleOnClickFilterInStock = () => {
-    setInStockSwitch(() => !inStockSwitch);
+    setInStockSwitchActive(() => !inStockSwitchActive);
   };
 
   useEffect(() => {
     let filteredProductData;
-    if (inStockSwitch) {
+    if (inStockSwitchActive) {
       filteredProductData = productData.filter(
         (product) => product.inventory > 0
       );
@@ -25,15 +25,14 @@ const ProductListPage = () => {
       filteredProductData = productData;
     }
     setFilteredProducts(filteredProductData);
-  }, [inStockSwitch]);
+  }, [inStockSwitchActive]);
 
   return (
     <PageLayout>
       <ListPageContainer>
-        <FilterSwitch handleOnClickFilterInStock={handleOnClickFilterInStock} />
-        <FilterButtons
+        <FilterSwitch
           handleOnClickFilterInStock={handleOnClickFilterInStock}
-          inStockSwitch={inStockSwitch}
+          inStockSwitchActive={inStockSwitchActive}
         />
         <ProductGrid products={filteredProducts} />
       </ListPageContainer>

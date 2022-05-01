@@ -20,6 +20,10 @@ Bug:
   - add dropdown menus
   - add enterprise bar
 - PLP
+  - Store filter states in query parameters.
+  - PAGINATION!
+  - Infinite Scroll
+  - Click on product, then back, should land in same spot
 - create PDP product details page
 - floating cart with #s, "addtocard" adds in there
 - drawer modal for cart

@@ -1,16 +1,17 @@
 import React from "react";
 import { CheckBoxWrapper, CheckBox, CheckBoxLabel } from "./styled";
 
-const FilterSwitch = ({ handleOnClickFilterInStock }) => {
+const FilterSwitch = ({ handleOnClickFilterInStock, inStockSwitchActive }) => {
   return (
     <div>
       <CheckBoxWrapper>
         <CheckBox
+          checked={inStockSwitchActive}
           onClick={handleOnClickFilterInStock}
-          id="checkbox"
+          id="checkboxFilter"
           type="checkbox"
         />
-        <CheckBoxLabel htmlFor="checkbox" />
+        <CheckBoxLabel htmlFor="checkboxFilter" />
       </CheckBoxWrapper>
     </div>
   );
