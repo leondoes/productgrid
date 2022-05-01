@@ -6,6 +6,7 @@ export const navBarHeight = 120; // default bar height
 
 export const NavbarStyled = styled.div`
   position: fixed;
+  z-index: 1;
   background: white;
   border-bottom: 1px solid #f7dadc;
   display: flex;

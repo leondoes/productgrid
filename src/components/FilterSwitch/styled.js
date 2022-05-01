@@ -26,7 +26,6 @@ export const CheckBoxLabel = styled.label`
 `;
 export const CheckBox = styled.input`
   opacity: 0;
-  z-index: 1;
   border-radius: 15px;
   width: 42px;
   height: 26px;
