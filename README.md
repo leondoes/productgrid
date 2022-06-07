@@ -8,8 +8,6 @@ Future TODOS:
 
 Bug:
 
-- PDP page crops off at 850px
-
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text
 - Navbar

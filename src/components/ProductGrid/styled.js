@@ -11,7 +11,7 @@ export const GridContainer = styled.div`
   - USUALLY never hard-coded numbers, should be defined in theme of the app where all the 
   different supported screen widthes are
    */
-  @media (min-width: 800px) {
+  @media (min-width: 950px) {
     grid-template: 500px / 300px 300px 300px;
   }
 `;

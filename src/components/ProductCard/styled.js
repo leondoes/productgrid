@@ -61,6 +61,7 @@ export const ProductImage = styled.img`
 `;
 
 export const ProductCardContainer = styled.div`
+  box-shadow: 0 4px 9px -4px rgb(0 0 0 / 0.2);
   height: 500px;
   width: 300px;
   &:hover {
