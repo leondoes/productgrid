@@ -5,10 +5,9 @@ const SearchBar = () => (
     <input
       type="text"
       id="header-search"
-      placeholder="What are you looking for today?"
+      placeholder="🔎 What are you looking for today?"
       name="s"
     />
-    <button type="submit">Search</button>
   </form>
 );
 
