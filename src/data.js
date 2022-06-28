@@ -1,8 +1,8 @@
 const productData = [
   {
     images: [
-      "https://www.fillmurray.com/200/200",
-      "https://www.fillmurray.com/201/201"
+      "https://www.fillmurray.com/1200/1200",
+      "https://www.fillmurray.com/1201/1201"
     ],
     Id: "622e91ac00b3e8b3d472b765",
     englishName: "Segway Ninebot E22 Electric KickScooter Grey",

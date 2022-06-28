@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PageLayout from "/src/layout/PageLayout";
 import ProductGrid from "/src/components/ProductGrid";
-import FilterButtons from "/src/components/FilterButtons";
 import { ListPageContainer } from "./styled";
 import FilterSwitch from "/src/components/FilterSwitch";
 
