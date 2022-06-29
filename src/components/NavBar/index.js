@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { NavbarStyled, StyledLink, StyledLogo } from "./styled";
+import {
+  NavbarStyled,
+  StyledLink,
+  StyledLogo,
+  LogoSearchContainer,
+  NavBarColumn,
+  LinkSpacing
+} from "./styled";
 import SearchBar from "/src/components/Search";
 
 const NavBar = () => {
@@ -21,21 +28,27 @@ const NavBar = () => {
 
   return (
     <NavbarStyled style={{ height: collapsed ? "49px" : "119px" }}>
-      <StyledLink to="/">
-        <StyledLogo>
-          <img
-            src={
-              "https://media-www.canadiantire.ca/logo/ct-brandmark-standard-primary-rgw-pos-hex-5f6ce5ad-aadc-44da-9d55-a06d4c6273bb.svg"
-            }
-            alt="Logo"
-          />
-        </StyledLogo>
-      </StyledLink>
-      <SearchBar></SearchBar>
-      <StyledLink to="/ProductListPage">Product List Page</StyledLink>
-      <StyledLink to="/Wishlist"> Wishlist</StyledLink>
-      <StyledLink to="/Flyer"> Flyer</StyledLink>
-      <StyledLink to="/cart"> Cart</StyledLink>
+      <NavBarColumn>
+        <LogoSearchContainer>
+          <StyledLink to="/">
+            <StyledLogo>
+              <img
+                src={
+                  "https://media-www.canadiantire.ca/logo/ct-brandmark-standard-primary-rgw-pos-hex-5f6ce5ad-aadc-44da-9d55-a06d4c6273bb.svg"
+                }
+                alt="Logo"
+              />
+            </StyledLogo>
+          </StyledLink>
+          <SearchBar></SearchBar>
+        </LogoSearchContainer>
+        <LinkSpacing>
+          <StyledLink to="/ProductListPage">Product List Page</StyledLink>
+          <StyledLink to="/Wishlist"> Wishlist</StyledLink>
+          <StyledLink to="/Flyer"> Flyer</StyledLink>
+          <StyledLink to="/cart"> Cart</StyledLink>
+        </LinkSpacing>
+      </NavBarColumn>
     </NavbarStyled>
   );
 };

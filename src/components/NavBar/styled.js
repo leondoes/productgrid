@@ -11,6 +11,7 @@ export const StyledLogo = styled.div`
 
 export const NavbarStyled = styled.div`
   position: fixed;
+  flex-wrap: wrap;
   z-index: 1;
   background: #262626;
   border-bottom: 1px solid #f7dadc;
@@ -33,4 +34,17 @@ export const StyledLink = styled(Link)`
   &:active {
     text-decoration: none;
   }
+`;
+
+export const LogoSearchContainer = styled.div`
+  display: flex;
+`;
+
+export const NavBarColumn = styled.div`
+  flex: 1;
+`;
+
+export const LinkSpacing = styled.div`
+  display: flex;
+  justify-content: space-evenly;
 `;
