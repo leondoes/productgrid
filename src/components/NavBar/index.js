@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  NavbarStyled,
-  StyledLink,
-  LogoSearchContainer,
-  NavBarColumn,
-  LinkSpacing
-} from "./styled";
+import { NavbarStyled, LogoSearchContainer } from "./styled";
 import SearchBar from "/src/components/Search";
 import HomePageLogo from "/src/components/HomePageLogo";
 import NavBarLinks from "/src/components/NavBarLinks";
@@ -29,13 +23,11 @@ const NavBar = () => {
 
   return (
     <NavbarStyled style={{ height: collapsed ? "49px" : "119px" }}>
-      <NavBarColumn>
-        <LogoSearchContainer>
-          <HomePageLogo />
-          <SearchBar />
-        </LogoSearchContainer>
-        <NavBarLinks />
-      </NavBarColumn>
+      <LogoSearchContainer>
+        <HomePageLogo />
+        <SearchBar />
+      </LogoSearchContainer>
+      <NavBarLinks />
     </NavbarStyled>
   );
 };
