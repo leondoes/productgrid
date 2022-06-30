@@ -1,13 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 // in px
 export const navBarHeight = 120; // default bar height
-
-export const StyledLogo = styled.div`
-  height: auto;
-  width: 62px;
-`;
 
 export const NavbarStyled = styled.div`
   position: fixed;
@@ -23,28 +17,10 @@ export const NavbarStyled = styled.div`
   transition: height 0.4s ease 0s;
 `;
 
-export const StyledLink = styled(Link)`
-  text-decoration: inherit;
-  color: white;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
-`;
-
 export const LogoSearchContainer = styled.div`
   display: flex;
 `;
 
 export const NavBarColumn = styled.div`
   flex: 1;
-`;
-
-export const LinkSpacing = styled.div`
-  display: flex;
-  justify-content: space-evenly;
 `;

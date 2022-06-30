@@ -10,7 +10,6 @@ Bug:
 
 TODO for now:
 
-- Logo, when SVG was taken, it was shows as huge 1000px by 1000px image. Borrow the styling from productImage CSS, we fixed this with some properties. The height + width + some other properties
 
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text

@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import {
   NavbarStyled,
   StyledLink,
-  StyledLogo,
   LogoSearchContainer,
   NavBarColumn,
   LinkSpacing
 } from "./styled";
 import SearchBar from "/src/components/Search";
+import HomePageLogo from "/src/components/HomePageLogo";
+import NavBarLinks from "/src/components/NavBarLinks";
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -30,24 +31,10 @@ const NavBar = () => {
     <NavbarStyled style={{ height: collapsed ? "49px" : "119px" }}>
       <NavBarColumn>
         <LogoSearchContainer>
-          <StyledLink to="/">
-            <StyledLogo>
-              <img
-                src={
-                  "https://media-www.canadiantire.ca/logo/ct-brandmark-standard-primary-rgw-pos-hex-5f6ce5ad-aadc-44da-9d55-a06d4c6273bb.svg"
-                }
-                alt="Logo"
-              />
-            </StyledLogo>
-          </StyledLink>
-          <SearchBar></SearchBar>
+          <HomePageLogo />
+          <SearchBar />
         </LogoSearchContainer>
-        <LinkSpacing>
-          <StyledLink to="/ProductListPage">Product List Page</StyledLink>
-          <StyledLink to="/Wishlist"> Wishlist</StyledLink>
-          <StyledLink to="/Flyer"> Flyer</StyledLink>
-          <StyledLink to="/cart"> Cart</StyledLink>
-        </LinkSpacing>
+        <NavBarLinks />
       </NavBarColumn>
     </NavbarStyled>
   );
