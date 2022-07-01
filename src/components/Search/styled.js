@@ -1,19 +1,19 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const SearchBarContainer = styled.div`
   display: flex;
+  width: 70%;
   justify-content: space-between;
   background: #fff;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
-  width: 70%;
   height: 3.5rem;
   *:focus {
     outline: none;
   }
 `;
 
-export const SearchBarInputStyle = styled.input`
+export const SearchBarInput = styled.input`
   height: 100%;
   border: 0;
   padding: 0;
@@ -24,8 +24,21 @@ export const SearchBarInputStyle = styled.input`
   margin-top: 0;
 `;
 
-export const SearchInputButton = styled.button`
+const commonButton = css`
   background-color: #fff;
   border: 0px;
   cursor: pointer;
+`;
+
+export const SearchIcon = styled.button`
+  ${commonButton}
+`;
+
+export const ExitSearch = styled.button`
+  ${commonButton}
+`;
+
+export const ClearAll = styled.button`
+  ${commonButton}
+  text-decoration: underline;
 `;
