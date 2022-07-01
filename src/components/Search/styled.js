@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SearchBarContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   background: #fff;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
@@ -12,11 +13,10 @@ export const SearchBarContainer = styled.div`
   }
 `;
 
-export const SearchBarInput = styled.input`
+export const SearchBarInputStyle = styled.input`
   height: 100%;
   border: 0;
   padding: 0;
-  flex-grow: 100;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;

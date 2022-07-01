@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  SearchBarInput,
-  SearchBarContainer,
-  MagGlassButton,
-  ExitSearchButton
-} from "./styled";
+import ClearAll from "./clearAll";
+import { SearchBarContainer, MagGlassButton, ExitSearchButton } from "./styled";
 
 const SearchBar = () => (
   <SearchBarContainer>
@@ -13,12 +9,7 @@ const SearchBar = () => (
         🔎
       </span>
     </MagGlassButton>
-    <SearchBarInput
-      type="text"
-      id="header-search"
-      placeholder="What are you looking for today?"
-      name="Search"
-    />
+    <ClearAll />
     <ExitSearchButton>X</ExitSearchButton>
   </SearchBarContainer>
 );
