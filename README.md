@@ -8,14 +8,13 @@ Future TODOS:
 
 Bug:
 
-TODO for now:
-
+- navbar make links dissapear on collapse
+  TODO for now:
 
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text
 - Navbar
-  - add search bar, input box with incon inside, placeholder text, clicking open drawer, clearall, X button, OnChange={handleOnChange}, this handleOnchange will make a call to "end-point" to get search results
-  - add logo (favicon as well)
+  - clicking nav link opens drawer
   - add hamburger menu, overlay with opacity, hidden-sidemenu (use visibility: hidden) with state that controls this, and visibility:show if user clicks the hamburger menu, has buttons and layout.
   - add dropdown menus
   - add enterprise bar
