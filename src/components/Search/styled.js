@@ -24,13 +24,7 @@ export const SearchBarInputStyle = styled.input`
   margin-top: 0;
 `;
 
-export const MagGlassButton = styled.button`
-  background-color: #fff;
-  border: 0px;
-  cursor: pointer;
-`;
-
-export const ExitSearchButton = styled.button`
+export const SearchInputButton = styled.button`
   background-color: #fff;
   border: 0px;
   cursor: pointer;

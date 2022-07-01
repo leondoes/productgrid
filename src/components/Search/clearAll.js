@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SearchBarInputStyle } from "./styled";
+import { SearchBarInputStyle, SearchInputButton } from "./styled";
 
 export default function ClearAll() {
   const [EmptyInput, setEmptyInput] = useState();
@@ -13,7 +13,9 @@ export default function ClearAll() {
         name="Search"
         value={EmptyInput}
       />
-      <button onClick={() => setEmptyInput(() => "")}>Reset</button>
+      <SearchInputButton onClick={() => setEmptyInput(() => "")}>
+        ClearAll
+      </SearchInputButton>
     </div>
   );
 }

@@ -1,16 +1,16 @@
 import React from "react";
 import ClearAll from "./clearAll";
-import { SearchBarContainer, MagGlassButton, ExitSearchButton } from "./styled";
+import { SearchBarContainer, SearchInputButton } from "./styled";
 
 const SearchBar = () => (
   <SearchBarContainer>
-    <MagGlassButton>
+    <SearchInputButton>
       <span role="img" aria-label="search">
         🔎
       </span>
-    </MagGlassButton>
+    </SearchInputButton>
     <ClearAll />
-    <ExitSearchButton>X</ExitSearchButton>
+    <SearchInputButton>X</SearchInputButton>
   </SearchBarContainer>
 );
 
