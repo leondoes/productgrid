@@ -11,6 +11,8 @@ Bug:
 - navbar make links dissapear on collapse
   TODO for now:
 
+-Add proper right and left margins to website
+
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text
 - Navbar
@@ -18,6 +20,7 @@ Bug:
   - add hamburger menu, overlay with opacity, hidden-sidemenu (use visibility: hidden) with state that controls this, and visibility:show if user clicks the hamburger menu, has buttons and layout.
   - add dropdown menus
   - add enterprise bar
+    - Add right side of enterprise bar
 - PLP
   - Store filter states in query parameters.
   - PAGINATION!
