@@ -17,6 +17,7 @@ export const SearchBarInput = styled.input`
   height: 100%;
   border: 0;
   padding: 0;
+  width: 100%;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
