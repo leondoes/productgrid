@@ -24,3 +24,7 @@ export const AdCopySmall = styled.div`
   margin-top: 5%;
   position: absolute;
 `;
+
+export const AdImg = styled.img`
+  width: 100%;
+`;

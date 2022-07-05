@@ -5,7 +5,6 @@ import img from "/src/assets/PencilBanner.webp";
 const EnterpriseBar = () => (
   <StyledBar>
     <StyledImg src={img} alt="Pencil Banner" />
-    <StyledDivider />
     <StyledText>Made for life in Canada</StyledText>
     <StyledDivider />
     <StyledText>Credit offered*</StyledText>

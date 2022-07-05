@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledBar = styled.div`
   display: flex;
-  height: 100%;
   background-color: #313131;
   height: 40px;
   align-items: center;
@@ -10,6 +9,7 @@ export const StyledBar = styled.div`
 
 export const StyledImg = styled.img`
   align-self: center;
+  margin-right: 10px;
 `;
 
 export const StyledText = styled.div`

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AdContainer, AdCopy, AdCopySmall } from "./styled";
+import { AdContainer, AdCopy, AdCopySmall, AdImg } from "./styled";
 
 const Advertisement = () => (
   <AdContainer>
@@ -9,7 +9,7 @@ const Advertisement = () => (
       <AdCopySmall>
         with Triangle Rewards® on June 9. *Pre-tax purchases. Conditions apply.
       </AdCopySmall>
-      <img src={"https://www.fillmurray.com/1440/140"} alt="Hot Sale" />
+      <AdImg src={"https://www.fillmurray.com/1440/140"} alt="Hot Sale" />
     </a>
   </AdContainer>
 );

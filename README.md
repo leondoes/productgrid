@@ -8,10 +8,10 @@ Future TODOS:
 
 Bug:
 
-- navbar make links dissapear on collapse
-  TODO for now:
+TODO for now:
 
 -Add proper right and left margins to website
+-Ask Dylan
 
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text

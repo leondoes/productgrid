@@ -27,7 +27,10 @@ const NavBar = () => {
         <HomePageLogo />
         <SearchBar />
       </LogoSearchContainer>
-      <NavBarLinks />
+      <NavBarLinks
+        customProp="hello"
+        style={{ display: collapsed ? "none" : "flex" }}
+      />
     </NavbarStyled>
   );
 };
