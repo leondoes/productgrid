@@ -22,7 +22,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <NavbarStyled style={{ height: collapsed ? "49px" : "119px" }}>
+    <NavbarStyled style={{ height: collapsed ? "80px" : "102px" }}>
       <LogoSearchContainer>
         <HomePageLogo />
         <SearchBar />

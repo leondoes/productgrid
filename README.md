@@ -19,8 +19,6 @@ TODO for now:
   - clicking nav link opens drawer
   - add hamburger menu, overlay with opacity, hidden-sidemenu (use visibility: hidden) with state that controls this, and visibility:show if user clicks the hamburger menu, has buttons and layout.
   - add dropdown menus
-  - add enterprise bar
-    - Add right side of enterprise bar
 - PLP
   - Store filter states in query parameters.
   - PAGINATION!

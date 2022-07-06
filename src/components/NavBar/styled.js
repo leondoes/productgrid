@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 // in px
-export const navBarHeight = 120; // default bar height
+export const navBarHeight = 102; // default bar height
 
 export const NavbarStyled = styled.div`
-  position: fixed;
+  position: sticky;
+  top: 0;
   flex-direction: column;
   z-index: 1;
   background: #262626;
