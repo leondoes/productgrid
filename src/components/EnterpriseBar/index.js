@@ -8,6 +8,7 @@ import {
   RightSideBar
 } from "./styled";
 import img from "/src/assets/PencilBanner.webp";
+import DropdownMenu from "/src/components/DropdownMenu";
 
 const EnterpriseBar = () => (
   <BarContainer>
@@ -18,7 +19,9 @@ const EnterpriseBar = () => (
       <BarText>Credit offered*</BarText>
     </LeftSideBar>
     <RightSideBar>
-      <BarText>Account</BarText>
+      <BarText>
+        <DropdownMenu />
+      </BarText>
       <BarText>Support</BarText>
       <BarDivider />
       <BarText>FR</BarText>

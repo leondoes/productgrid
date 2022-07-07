@@ -7,6 +7,7 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 Future TODOS:
 
 Bug:
+-Account dropdown menu needs to appear in front of other page elements
 
 TODO for now:
 
