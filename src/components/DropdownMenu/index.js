@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import {
-  BarText,
+  AccountMenuText,
   AccountButton,
   MenuContainer,
-  DropdownContainer
+  DropdownContainer,
+  Top,
+  Middle,
+  Bottom,
+  StyledLink,
+  MenuLink,
+  TriangleRewards
 } from "./styled";
+import img from "/src/assets/TriangleRewards.webp";
 
 const DropdownMenu = () => {
   const [displayed, setDisplayed] = useState(false);
@@ -13,15 +20,32 @@ const DropdownMenu = () => {
   return (
     <MenuContainer>
       <AccountButton onClick={handleOnClick}>
-        <BarText>Account</BarText>
+        <AccountMenuText>Account</AccountMenuText>
       </AccountButton>
 
       {displayed && (
         <DropdownContainer>
-          <div>Option 1</div>
-          <div>Option 2</div>
-          <div>Option 3</div>
-          <div>Option 4</div>
+          <Top>
+            <StyledLink to="/">Sign in</StyledLink> or{" "}
+            <StyledLink to="/">Register</StyledLink>
+          </Top>
+          <Middle>
+            <TriangleRewards src={img} alt="Triangle Rewards logo" />
+            Triangle Rewards™
+            <p>
+              The rewards program that lets you collect Canadian Tire Money®
+              fast at the stores you love.{" "}
+              <StyledLink to="">Register Now.</StyledLink>
+            </p>
+          </Middle>
+          <Bottom>
+            <MenuLink to="/">Payment Information</MenuLink>
+            <MenuLink to="/">Rewards</MenuLink>
+            <MenuLink to="/">Preferences</MenuLink>
+            <MenuLink to="/">Order History</MenuLink>
+            <MenuLink to="/">Personal Information</MenuLink>
+            <MenuLink to="/">Addresses</MenuLink>
+          </Bottom>
         </DropdownContainer>
       )}
     </MenuContainer>
