@@ -7,12 +7,13 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 Future TODOS:
 
 Bug:
--Account dropdown menu needs to appear in front of other page elements
+-Account dropdown menu needs to close when blicking outside of menu
 
 TODO for now:
 
--Add proper right and left margins to website
--Ask Dylan
+-impalement sort by name to product list page
+
+-Add proper right and left margins to website -https://www.joshwcomeau.com/css/full-bleed/
 
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text
