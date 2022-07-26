@@ -8,6 +8,7 @@ Future TODOS:
 
 Bug:
 -Account dropdown menu needs to close when blicking outside of menu
+-"attach" navbar grid padding to navbar
 
 TODO for now:
 
@@ -21,6 +22,7 @@ TODO for now:
   - clicking nav link opens drawer
   - add hamburger menu, overlay with opacity, hidden-sidemenu (use visibility: hidden) with state that controls this, and visibility:show if user clicks the hamburger menu, has buttons and layout.
   - add dropdown menus
+    -Add chevrons to dropdown menus
 - PLP
   - Store filter states in query parameters.
   - PAGINATION!

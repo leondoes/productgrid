@@ -19,5 +19,5 @@ export const NavbarStyled = styled.div`
 
 export const LogoSearchContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;
