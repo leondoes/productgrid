@@ -2,7 +2,7 @@ import React from "react";
 
 const CanadianTirelogo = () => (
   <svg
-    enable-background="new 0 0 180 160"
+    enableBackground="new 0 0 180 160"
     viewBox="0 0 180 160"
     xmlns="http://www.w3.org/2000/svg"
   >

@@ -2,12 +2,12 @@ import styled, { css } from "styled-components";
 
 export const SearchBarContainer = styled.div`
   display: flex;
-  width: 70%;
+  width: 50%;
   justify-content: space-between;
   background: #fff;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
-  height: 3.5rem;
+  height: 3rem;
   *:focus {
     outline: none;
   }

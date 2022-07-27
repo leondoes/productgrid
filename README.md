@@ -7,18 +7,17 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 Future TODOS:
 
 Bug:
--Account dropdown menu needs to close when blicking outside of menu
+-Account dropdown menu needs to close when clicking outside of menu
 -"attach" navbar grid padding to navbar
 
 TODO for now:
 
 -impalement sort by name to product list page
 
--Add proper right and left margins to website -https://www.joshwcomeau.com/css/full-bleed/
-
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text
 - Navbar
+  - Add function to icons on right side of navbar
   - clicking nav link opens drawer
   - add hamburger menu, overlay with opacity, hidden-sidemenu (use visibility: hidden) with state that controls this, and visibility:show if user clicks the hamburger menu, has buttons and layout.
   - add dropdown menus

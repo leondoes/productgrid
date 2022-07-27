@@ -19,5 +19,23 @@ export const NavbarStyled = styled.div`
 
 export const LogoSearchContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+`;
+
+export const ClosestStore = styled.div`
+  color: #fff;
+  text-align: left;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-family: "Lato", sans-serif;
+  margin: 0px 5px;
+`;
+
+export const RightIcon = styled.div`
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 0;
+  font-family: "Lato", sans-serif;
+  text-align: right;
 `;
