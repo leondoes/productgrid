@@ -12,7 +12,7 @@ Bug:
 
 TODO for now:
 
--impalement sort by name to product list page
+-implement sort by name to product list page
 
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text
@@ -36,3 +36,8 @@ TODO for now:
 - create profile
 - Sign-in, sign-up
 - create wishlist
+
+TESTING!
+
+- install jest
+- test helper function "sortArrayAlphabetical"
