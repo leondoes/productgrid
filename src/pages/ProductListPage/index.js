@@ -3,37 +3,55 @@ import PageLayout from "/src/layout/PageLayout";
 import ProductGrid from "/src/components/ProductGrid";
 import { ListPageContainer } from "./styled";
 import FilterSwitch from "/src/components/FilterSwitch";
+import { sortArrayAlphabetical } from "/src/common/helpers/sort";
 
 import productData from "/src/data.js";
 
 const ProductListPage = () => {
   const [inStockSwitchActive, setInStockSwitchActive] = useState(false);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [alphbeticalSortActive, setAlphbeticalSortActive] = useState(false);
+  const [mutatedProductData, setMutatedProductData] = useState([]);
+  const [rawProductData, setRawProductData] = useState([]);
 
   const handleOnClickFilterInStock = () => {
     setInStockSwitchActive(() => !inStockSwitchActive);
   };
 
+  const handleOnClickSortAlphabetical = () => {
+    setAlphbeticalSortActive(() => !alphbeticalSortActive);
+  };
+
   useEffect(() => {
-    let filteredProductData;
+    // "fetching" data from server
+    setRawProductData(() => productData);
+
+    // Creates a locally stored product data array
+    let localMutatedData = [...rawProductData];
+
+    // Checks if in stock switch is activated and filters array
     if (inStockSwitchActive) {
-      filteredProductData = productData.filter(
+      localMutatedData = localMutatedData.filter(
         (product) => product.inventory > 0
       );
-    } else {
-      filteredProductData = productData;
     }
-    setFilteredProducts(filteredProductData);
-  }, [inStockSwitchActive]);
+    //checks if alphabetically sorting data is activated and sorts on the mutated array
+    if (alphbeticalSortActive) {
+      localMutatedData = sortArrayAlphabetical(localMutatedData, "name");
+    }
+    setMutatedProductData(() => localMutatedData);
+  }, [inStockSwitchActive, alphbeticalSortActive, rawProductData]);
 
   return (
     <PageLayout>
       <ListPageContainer>
-        <FilterSwitch
-          handleOnClickFilterInStock={handleOnClickFilterInStock}
-          inStockSwitchActive={inStockSwitchActive}
-        />
-        <ProductGrid products={filteredProducts} />
+        <div>
+          <FilterSwitch
+            handleOnClickFilterInStock={handleOnClickFilterInStock}
+            inStockSwitchActive={inStockSwitchActive}
+          />
+          <button onClick={handleOnClickSortAlphabetical}>SortByName</button>
+        </div>
+        <ProductGrid products={mutatedProductData} />
       </ListPageContainer>
     </PageLayout>
   );

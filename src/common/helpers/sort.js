@@ -1,4 +1,4 @@
-//JDoc is used to explain what the code does and uses @param to describle specific parameters of the code
+//JDoc is used to explain what the code does and uses @param to describe specific parameters of the code
 
 /**  this function sorts an array alphabetically given a key
  *   @param {Array} inputArray Array the array to be sorted (will not be mutated)
