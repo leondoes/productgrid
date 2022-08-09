@@ -11,6 +11,11 @@ Bug:
 TODO for now:
 
 -implement sort by name to product list page
+-style button into a switch
+-add labels to switches
+
+- floating cart with #s, "addtocard" adds in there
+- drawer modal for cart
 
 - Homepage
   - Add an AD to the homepage, container with img <a> for link, button, changes on resize, flexbox, div with text
@@ -26,8 +31,6 @@ TODO for now:
   - Infinite Scroll
   - Click on product, then back, should land in same spot
 - create PDP product details page
-- floating cart with #s, "addtocard" adds in there
-- drawer modal for cart
 - "enter checkout" from cart
 
 - with sub-menu
