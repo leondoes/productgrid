@@ -2,8 +2,8 @@ import React from "react";
 import {
   PageContainer,
   ContentContainer,
-  ColorDiv,
-  ColorDivEnd
+  LeftNavBarGrid,
+  RightNavBarGrid
 } from "./styled";
 import NavBar from "/src/components/NavBar";
 import EnterpriseBar from "/src/components/EnterpriseBar";
@@ -11,10 +11,10 @@ import EnterpriseBar from "/src/components/EnterpriseBar";
 const PageLayout = ({ children, ...props }) => {
   return (
     <PageContainer {...props}>
-      <ColorDiv />
-      <ColorDivEnd />
       <EnterpriseBar />
+      <LeftNavBarGrid />
       <NavBar />
+      <RightNavBarGrid />
       <ContentContainer>{children}</ContentContainer>
     </PageContainer>
   );

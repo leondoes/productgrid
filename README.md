@@ -7,8 +7,6 @@ https://www.canadiantire.ca/en/sports-rec/skateboards-scooters.html?adlocation=L
 Future TODOS:
 
 Bug:
--Account dropdown menu needs to close when clicking outside of menu
--"attach" navbar grid padding to navbar
 
 TODO for now:
 
@@ -35,6 +33,8 @@ TODO for now:
 - with sub-menu
 - create profile
 - Sign-in, sign-up
+  -Create modal+overlay for signin/sign-up page when clicking on "sign-in" in account menu
+  -potential bug: disable scroll on overlay
 - create wishlist
 
 TESTING!

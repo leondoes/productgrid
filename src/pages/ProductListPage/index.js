@@ -13,7 +13,7 @@ const ProductListPage = () => {
   const [mutatedProductData, setMutatedProductData] = useState([]);
   const [rawProductData, setRawProductData] = useState([]);
 
-  const handleOnClickFilterInStock = () => {
+  const handleOnChangeFilterInStock = () => {
     setInStockSwitchActive(() => !inStockSwitchActive);
   };
 
@@ -46,7 +46,7 @@ const ProductListPage = () => {
       <ListPageContainer>
         <div>
           <FilterSwitch
-            handleOnClickFilterInStock={handleOnClickFilterInStock}
+            handleOnChangeFilterInStock={handleOnChangeFilterInStock}
             inStockSwitchActive={inStockSwitchActive}
           />
           <button onClick={handleOnClickSortAlphabetical}>SortByName</button>
