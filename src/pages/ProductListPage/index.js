@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PageLayout from "/src/layout/PageLayout";
 import ProductGrid from "/src/components/ProductGrid";
-import { ListPageContainer } from "./styled";
+import { ListPageContainer, Filters, FilterLabel } from "./styled";
 import FilterSwitch from "/src/components/FilterSwitch";
 import { sortArrayAlphabetical } from "/src/common/helpers/sort";
 
@@ -44,13 +44,14 @@ const ProductListPage = () => {
   return (
     <PageLayout>
       <ListPageContainer>
-        <div>
+        <Filters>
           <FilterSwitch
             handleOnChangeFilterInStock={handleOnChangeFilterInStock}
             inStockSwitchActive={inStockSwitchActive}
           />
+          <FilterLabel>In Stock At My Store</FilterLabel>
           <button onClick={handleOnClickSortAlphabetical}>SortByName</button>
-        </div>
+        </Filters>
         <ProductGrid products={mutatedProductData} />
       </ListPageContainer>
     </PageLayout>
