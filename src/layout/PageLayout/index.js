@@ -6,6 +6,7 @@ import {
   RightNavBarGrid
 } from "./styled";
 import NavBar from "/src/components/NavBar";
+import Cart from "/src/components/ShoppingCart";
 import EnterpriseBar from "/src/components/EnterpriseBar";
 
 const PageLayout = ({ children, ...props }) => {
@@ -15,6 +16,7 @@ const PageLayout = ({ children, ...props }) => {
       <LeftNavBarGrid />
       <NavBar />
       <RightNavBarGrid />
+      <Cart />
       <ContentContainer>{children}</ContentContainer>
     </PageContainer>
   );

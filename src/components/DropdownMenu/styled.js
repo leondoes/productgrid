@@ -33,7 +33,7 @@ export const DropdownContainer = styled.div`
   display: block;
   top: 40px;
   left: inherit;
-  z-index: 1000;
+  z-index: 4;
   width: 13.75rem;
   background: #fff 0 0 no-repeat padding-box;
   box-shadow: 0 8px 24px rgb(38 38 38 / 10%);

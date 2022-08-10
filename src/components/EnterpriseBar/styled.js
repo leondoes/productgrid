@@ -6,6 +6,7 @@ export const BarContainer = styled.div`
   height: 40px;
   align-items: center;
   justify-content: space-between;
+  z-index: 3;
 `;
 
 export const CanadasStoreImg = styled.img`

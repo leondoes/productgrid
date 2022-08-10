@@ -10,7 +10,6 @@ Bug:
 
 TODO for now:
 
--implement sort by name to product list page
 -style button into a switch
 -add labels to switches
 

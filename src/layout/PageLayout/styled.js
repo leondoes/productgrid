@@ -25,6 +25,7 @@ export const PageContainer = styled.div`
     background-color: #313131;
     grid-row: 1;
     grid-column: 3;
+    z-index: 2;
   }
 `;
 export const LeftNavBarGrid = styled.div`
@@ -42,6 +43,7 @@ export const RightNavBarGrid = styled.div`
   position: sticky;
   top: 0;
   border-bottom: 1px solid #f7dadc;
+  z-index: 2;
 `;
 
 export const ContentContainer = styled.div`
