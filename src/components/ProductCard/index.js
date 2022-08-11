@@ -49,12 +49,7 @@ const ProductCard = ({ productDetails }) => {
       <Sku>#{sku}</Sku>
       <Price>${price}</Price>
       <Stock>{inStock}</Stock>
-      <CartButton onClick={addToCartOnClick}>
-        <span role="img" aria-label="add to cart" alt="cart">
-          🛒
-        </span>{" "}
-        ADD TO CART
-      </CartButton>
+      <CartButton onClick={addToCartOnClick}>ADD TO CART</CartButton>
     </ProductCardContainer>
   );
 };

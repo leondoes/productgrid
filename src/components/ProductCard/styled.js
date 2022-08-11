@@ -33,20 +33,20 @@ export const Stock = styled.div`
 `;
 
 export const CartButton = styled.button`
-  font-family: Roboto;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   cursor: pointer;
-  color: rgba(0, 97, 35, 255);
-  font-size: 20px;
+  color: white;
+  border: none;
   text-decoration: none;
-  background-color: Transparent;
-  background-repeat: no-repeat;
+  background-color: black;
   display: inline-block;
-  margin-top: 45px;
+  margin-top: 30px;
   margin-left: 20px;
-  border: 0;
+  padding: 5% 25% 5% 25%;
   &:hover {
-    color: rgba(28, 150, 73, 255);
+    transition: 0.3s;
+    background: #4c4d4f;
   }
 `;
 
