@@ -24,7 +24,7 @@ const Cart = () => {
   CartContainer(outsideContainerRef, handleOnClick);
   return (
     <>
-      <CartButton onClick={handleOnClick}>Cart</CartButton>
+      <CartButton onClick={handleOnClick}>CART</CartButton>
 
       {displayed && <ActiveCart ref={outsideContainerRef} />}
     </>
