@@ -1,7 +1,10 @@
 import React from "react";
 import { CheckBoxWrapper, CheckBox, CheckBoxLabel } from "./styled";
 
-const FilterSwitch = ({ handleOnChangeFilterInStock, inStockSwitchActive }) => {
+const StockFilterSwitch = ({
+  handleOnChangeFilterInStock,
+  inStockSwitchActive
+}) => {
   return (
     <CheckBoxWrapper>
       <CheckBox
@@ -15,4 +18,4 @@ const FilterSwitch = ({ handleOnChangeFilterInStock, inStockSwitchActive }) => {
   );
 };
 
-export default FilterSwitch;
+export default StockFilterSwitch;

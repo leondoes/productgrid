@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import PageLayout from "/src/layout/PageLayout";
 import ProductGrid from "/src/components/ProductGrid";
 import { ListPageContainer, Filters, FilterLabel } from "./styled";
-import FilterSwitch from "/src/components/FilterSwitch";
+import StockFilterSwitch from "/src/components/StockFilterSwitch";
+import SortByNameSwitch from "/src/components/SortByNameSwitch";
 import { sortArrayAlphabetical } from "/src/common/helpers/sort";
 
 import productData from "/src/data.js";
@@ -45,12 +46,16 @@ const ProductListPage = () => {
     <PageLayout>
       <ListPageContainer>
         <Filters>
-          <FilterSwitch
+          <StockFilterSwitch
             handleOnChangeFilterInStock={handleOnChangeFilterInStock}
             inStockSwitchActive={inStockSwitchActive}
           />
-          <FilterLabel>In Stock At My Store</FilterLabel>
-          <button onClick={handleOnClickSortAlphabetical}>SortByName</button>
+          <FilterLabel>In-Stock at my store</FilterLabel>
+          <SortByNameSwitch
+            handleOnClickSortAlphabetical={handleOnClickSortAlphabetical}
+            alphbeticalSortActive={alphbeticalSortActive}
+          />
+          <FilterLabel>Sort A-Z</FilterLabel>
         </Filters>
         <ProductGrid products={mutatedProductData} />
       </ListPageContainer>
