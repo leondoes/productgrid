@@ -14,7 +14,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 254.9
     },
     inventory: 1
   },
@@ -33,7 +33,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 853.23
     },
     inventory: 0
   },
@@ -52,7 +52,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 382.99
     },
     inventory: 1
   },
@@ -71,7 +71,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 200.9
     },
     inventory: 3
   },
@@ -90,7 +90,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 988.3
     },
     inventory: 3
   },
@@ -109,7 +109,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 2000
     },
     inventory: 0
   },
@@ -128,7 +128,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 11.92
     },
     inventory: 2
   },
@@ -147,7 +147,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 301.99
     },
     inventory: 2
   },
@@ -166,7 +166,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 420.9
     },
     inventory: 3
   },
@@ -185,7 +185,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 79.95
     },
     inventory: 2
   },
@@ -204,7 +204,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 44.59
     },
     inventory: 0
   },
@@ -223,7 +223,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 13.38
     },
     inventory: 3
   },
@@ -242,7 +242,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 301.2
     },
     inventory: 0
   },
@@ -261,7 +261,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 1999.99
     },
     inventory: 2
   },
@@ -280,7 +280,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 849.29
     },
     inventory: 2
   },
@@ -318,7 +318,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 11.99
     },
     inventory: 2
   },
@@ -337,7 +337,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 72.29
     },
     inventory: 0
   },
@@ -356,7 +356,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 379.72
     },
     inventory: 1
   },
@@ -375,7 +375,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 490.2
     },
     inventory: 3
   },
@@ -394,7 +394,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 400.29
     },
     inventory: 2
   },
@@ -413,7 +413,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 392.29
     },
     inventory: 3
   },
@@ -432,7 +432,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 328.29
     },
     inventory: 2
   },
@@ -451,7 +451,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 399.99
     },
     inventory: 2
   },
@@ -470,7 +470,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 329.29
     },
     inventory: 3
   },
@@ -489,7 +489,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 113.99
     },
     inventory: 0
   },
@@ -508,7 +508,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 450.49
     },
     inventory: 2
   },
@@ -527,7 +527,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 129.29
     },
     inventory: 2
   },
@@ -546,7 +546,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 490.2
     },
     inventory: 3
   },
@@ -565,7 +565,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 390.99
     },
     inventory: 0
   },
@@ -584,7 +584,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 999.99
     },
     inventory: 0
   },
@@ -603,7 +603,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 899.99
     },
     inventory: 0
   },
@@ -622,7 +622,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 658.99
     },
     inventory: 0
   },
@@ -641,7 +641,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 290.2
     },
     inventory: 3
   },
@@ -660,7 +660,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 389.29
     },
     inventory: 0
   },
@@ -679,7 +679,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 399.99
     },
     inventory: 3
   },
@@ -698,7 +698,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 239.89
     },
     inventory: 0
   },
@@ -717,7 +717,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 499.99
     },
     inventory: 3
   },
@@ -736,7 +736,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 230.1
     },
     inventory: 2
   },
@@ -755,7 +755,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 489.99
     },
     inventory: 1
   },
@@ -774,7 +774,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 349.99
     },
     inventory: 1
   },
@@ -793,7 +793,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 230.3
     },
     inventory: 1
   },
@@ -812,7 +812,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 679.98
     },
     inventory: 3
   },
@@ -831,7 +831,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 890.39
     },
     inventory: 1
   },
@@ -850,7 +850,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 445.48
     },
     inventory: 0
   },
@@ -869,7 +869,7 @@ const productData = [
     tested: true,
     price: {
       usd: 400,
-      cad: 949.99
+      cad: 29.99
     },
     inventory: 0
   }
