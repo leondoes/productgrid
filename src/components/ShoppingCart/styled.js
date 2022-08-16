@@ -24,11 +24,23 @@ export const CartButton = styled.button`
 `;
 
 export const ActiveCart = styled.div`
-  display: flex;
+  z-index: 4;
+  background: #fff 0 0 no-repeat padding-box;
+  box-shadow: 0 8px 24px rgb(38 38 38 / 10%);
+  border-radius: 2px;
+  font-family: "Lato", sans-serif;
   position: fixed;
   right: 0;
-  z-index: 0;
+  z-index: 3;
   height: 100%;
-  width: 50%;
-  background-color: #555;
+  width: 400px;
+`;
+
+export const OverlayShadow = styled.div`
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
 `;

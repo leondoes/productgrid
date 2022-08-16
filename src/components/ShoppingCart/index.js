@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { CartButton, ActiveCart } from "./styled";
+import { CartButton, ActiveCart, OverlayShadow } from "./styled";
 
 const Cart = () => {
   const [displayed, setDisplayed] = useState(false);
@@ -26,7 +26,11 @@ const Cart = () => {
     <>
       <CartButton onClick={handleOnClick}>CART</CartButton>
 
-      {displayed && <ActiveCart ref={outsideContainerRef} />}
+      {displayed && (
+        <>
+          <OverlayShadow /> <ActiveCart ref={outsideContainerRef} />{" "}
+        </>
+      )}
     </>
   );
 };
