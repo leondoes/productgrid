@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { CartButton, ActiveCart, OverlayShadow } from "./styled";
+import AddToCart from "/src/components/AddToCart/";
 
 const Cart = () => {
   const [displayed, setDisplayed] = useState(false);
@@ -28,7 +29,11 @@ const Cart = () => {
 
       {displayed && (
         <>
-          <OverlayShadow /> <ActiveCart ref={outsideContainerRef} />{" "}
+          <OverlayShadow />{" "}
+          <ActiveCart ref={outsideContainerRef}>
+            Hello
+            <AddToCart />
+          </ActiveCart>
         </>
       )}
     </>
