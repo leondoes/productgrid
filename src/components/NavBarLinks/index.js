@@ -9,6 +9,8 @@ const NavBarLinks = ({ style }) => (
     <StyledLink to="/Wishlist"> Wishlist</StyledLink>
     <StyledLink to="/Flyer"> Flyer</StyledLink>
     <StyledLink to="/cart"> Cart</StyledLink>
+    <StyledLink to="/DataExtraction"> Data </StyledLink>
+    <StyledLink to="/Profile"> Profile</StyledLink>
   </LinkContainer>
 );
 

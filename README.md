@@ -9,9 +9,9 @@ Future TODOS:
 Bug:
 
 TODO for now:
-
--style button into a switch
--add labels to switches
+~~!!!!!PROFILE PAGE:
+https://mejuri.com/ca/en/profile - Profile page setup / sidebar / navigation - Store Credits - My Orders - Wishlist - Shipping Info - Billing Info - Giftcard Balance - CDN changes/Split AB test /Rollout
+BUGS: - proper font needs to be added to profile
 
 - floating cart with #s, "addtocard" adds in there
 - drawer modal for cart
