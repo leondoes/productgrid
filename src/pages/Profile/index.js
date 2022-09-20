@@ -1,30 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import PageLayout from "/src/layout/PageLayout";
 import {
-  Username,
-  ProfileNavigation,
+  ProfileContainer,
+  Sidebar,
   NavButton,
-  ProfileInfo,
   DisplayedContent
 } from "./styled";
 
+import ProfileInfo from "/src/components/ProfileInfo";
+import StoreCredit from "/src/components/StoreCredit";
+import MyOrders from "/src/components/MyOrders";
+import MyWishlist from "/src/components/MyWishlist";
+import ShippingInfo from "/src/components/ShippingInfo";
+import BillingInfo from "/src/components/BillingInfo";
+import GiftCardBalance from "/src/components/GiftCardBalance";
+
 const Profile = () => {
+  const [currentlyDisplayed, setCurrentlyDisplayed] = useState(ProfileInfo);
+  const [activeMenuItem, setActiveMenuItem] = useState(null);
+
   return (
     <PageLayout>
-      <ProfileNavigation>
-        <NavButton>Store Credit</NavButton>
-        <NavButton>My Orders</NavButton>
-        <NavButton>My Wishlist</NavButton>
-        <NavButton>Shipping Info</NavButton>
-        <NavButton>Billing Info</NavButton>
-        <NavButton>gift card Balance</NavButton>
-      </ProfileNavigation>
-      <DisplayedContent>
-        <Username>Hello, Leon Dobrescu</Username>
-        <ProfileInfo>
-          Name:Leon Dobrescu Email:leon.dobrescu@gmail.com Password:*******
-        </ProfileInfo>
-      </DisplayedContent>
+      <ProfileContainer>
+        <Sidebar>
+          <NavButton
+            onClick={() => {
+              setCurrentlyDisplayed(ProfileInfo);
+            }}
+          >
+            My Profile
+          </NavButton>
+          <NavButton
+            onClick={() => {
+              setCurrentlyDisplayed(StoreCredit);
+            }}
+          >
+            Store Credit
+          </NavButton>
+          <NavButton
+            onClick={() => {
+              setCurrentlyDisplayed(MyOrders);
+            }}
+          >
+            My Orders
+          </NavButton>
+          <NavButton
+            onClick={() => {
+              setCurrentlyDisplayed(MyWishlist);
+            }}
+          >
+            My Wishlist
+          </NavButton>
+          <NavButton
+            onClick={() => {
+              setCurrentlyDisplayed(ShippingInfo);
+            }}
+          >
+            Shipping Info
+          </NavButton>
+          <NavButton
+            onClick={() => {
+              setCurrentlyDisplayed(BillingInfo);
+            }}
+          >
+            Billing Info
+          </NavButton>
+          <NavButton
+            onClick={() => {
+              setCurrentlyDisplayed(GiftCardBalance);
+            }}
+          >
+            gift card Balance
+          </NavButton>
+        </Sidebar>
+        <DisplayedContent>{currentlyDisplayed}</DisplayedContent>
+      </ProfileContainer>
     </PageLayout>
   );
 };
