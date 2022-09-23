@@ -31,4 +31,4 @@ const ProfileNavBar = ({ setCurrentlyDisplayed }) => {
   );
 };
 
-export default ProfileSideBar;
+export default ProfileNavBar;
