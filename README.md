@@ -11,7 +11,7 @@ Bug:
 TODO for now:
 ~~!!!!!PROFILE PAGE:
 https://mejuri.com/ca/en/profile - Profile page setup / sidebar / navigation - Store Credits - My Orders - Wishlist - Shipping Info - Billing Info - Giftcard Balance - CDN changes/Split AB test /Rollout
-BUGS: - proper font needs to be added to profile
+BUGS: - proper font needs to be added to profile - Add bold to all selected profile nav buttons
 
 - floating cart with #s, "addtocard" adds in there
 - drawer modal for cart

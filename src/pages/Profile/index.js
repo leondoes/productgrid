@@ -19,7 +19,10 @@ const Profile = () => {
     <PageLayout>
       <ProfileContainer>
         <Sidebar>
-          <ProfileNavBar setCurrentlyDisplayed={setCurrentlyDisplayed} />
+          <ProfileNavBar
+            setCurrentlyDisplayed={setCurrentlyDisplayed}
+            currentlyDisplayed={currentlyDisplayed}
+          />
         </Sidebar>
         <DisplayedContent>
           {currentlyDisplayed === "ProfileInfo" && <ProfileInfo />}

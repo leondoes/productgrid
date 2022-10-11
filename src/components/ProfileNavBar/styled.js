@@ -16,4 +16,7 @@ export const NavButton = styled.button`
     transition: all 0.25s ease;
     color: #333333;
   }
+  font-weight: ${(props) => (props.selected ? "bold" : "normal")};
 `;
+
+//fontWeight: currentlyDisplayed === "ProfileInfo" ? "bold" : "normal"

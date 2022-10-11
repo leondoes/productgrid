@@ -1,17 +1,23 @@
 import React from "react";
 import { NavButton } from "./styled";
 
-const ProfileNavBar = ({ setCurrentlyDisplayed }) => {
+const ProfileNavBar = ({ setCurrentlyDisplayed, currentlyDisplayed }) => {
   const handleOnClick = (label) => {
     setCurrentlyDisplayed(label);
   };
 
   return (
     <>
-      <NavButton onClick={() => handleOnClick("ProfileInfo")}>
+      <NavButton
+        selected={currentlyDisplayed === "ProfileInfo"}
+        onClick={() => handleOnClick("ProfileInfo")}
+      >
         My Profile
       </NavButton>
-      <NavButton onClick={() => handleOnClick("StoreCredit")}>
+      <NavButton
+        selected={currentlyDisplayed === "StoreCredit"}
+        onClick={() => handleOnClick("StoreCredit")}
+      >
         Store Credit
       </NavButton>
       <NavButton onClick={() => handleOnClick("MyOrders")}>My Orders</NavButton>
