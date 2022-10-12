@@ -20,17 +20,34 @@ const ProfileNavBar = ({ setCurrentlyDisplayed, currentlyDisplayed }) => {
       >
         Store Credit
       </NavButton>
-      <NavButton onClick={() => handleOnClick("MyOrders")}>My Orders</NavButton>
-      <NavButton onClick={() => handleOnClick("MyWishlist")}>
-        My Wishlist
+      <NavButton
+        selected={currentlyDisplayed === "MyOrders"}
+        onClick={() => handleOnClick("MyOrders")}
+      >
+        My Orders
       </NavButton>
-      <NavButton onClick={() => handleOnClick("ShippingInfo")}>
+      <NavButton
+        selected={currentlyDisplayed === "MyWishlist"}
+        onClick={() => handleOnClick("MyWishlist")}
+      >
+        My Wish list
+      </NavButton>
+      <NavButton
+        selected={currentlyDisplayed === "ShippingInfo"}
+        onClick={() => handleOnClick("ShippingInfo")}
+      >
         Shipping Info
       </NavButton>
-      <NavButton onClick={() => handleOnClick("BillingInfo")}>
+      <NavButton
+        selected={currentlyDisplayed === "BillingInfo"}
+        onClick={() => handleOnClick("BillingInfo")}
+      >
         Billing Info
       </NavButton>
-      <NavButton onClick={() => handleOnClick("GiftCardBalance")}>
+      <NavButton
+        selected={currentlyDisplayed === "GiftCardBalance"}
+        onClick={() => handleOnClick("GiftCardBalance")}
+      >
         gift card Balance
       </NavButton>
     </>
