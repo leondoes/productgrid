@@ -3,11 +3,19 @@
 // 3. animation on "EDIT"
 
 import React, { useState } from "react";
-import { Title, Label } from "./styled";
+import {
+  Title,
+  Label,
+  TableContainer,
+  TableBody,
+  TableRow,
+  TableCell,
+  EditButton
+} from "./styled";
 import EditProfile from "/src/components/ProfileInfo/EditProfile";
 
 const profileData = {
-  first_name: "Leon dobrescu",
+  first_name: "Leon Dobrescu",
   email: "leon.dobrescu@gmail.com",
   password: "******"
 };
@@ -23,31 +31,37 @@ const ProfileInfo = () => {
 
   return (
     <>
-      <Title>{`Hello ${first_name}`}</Title>
+      <Title>{`Hello, ${first_name}`}</Title>
       {!isEditing && (
-        <>
-          <div>
-            <Label>Name:</Label>
-            <div>{first_name}</div>
-          </div>
-          <div>
-            <Label>Email:</Label>
-            <div>{email}</div>
-          </div>
-          <div>
-            <Label>Password:</Label>
-            <div>{password}</div>
-          </div>
-          <div>
-            <button
-              onClick={() => {
-                toggleDisplayEdit();
-              }}
-            >
-              EDIT
-            </button>
-          </div>
-        </>
+        <TableContainer>
+          <TableBody>
+            <TableRow>
+              <TableCell>
+                <Label>Name:</Label>
+              </TableCell>
+              <TableCell>{first_name}</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>
+                <Label>Email:</Label>
+              </TableCell>
+              <TableCell>{email}</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>
+                <Label>Password:</Label>
+              </TableCell>
+              <TableCell>{password}</TableCell>
+            </TableRow>
+          </TableBody>
+          <EditButton
+            onClick={() => {
+              toggleDisplayEdit();
+            }}
+          >
+            EDIT
+          </EditButton>
+        </TableContainer>
       )}
       {isEditing && (
         <EditProfile
