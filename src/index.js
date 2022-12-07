@@ -8,7 +8,6 @@ import WishlistPage from "/src/pages/Wishlist";
 import Flyer from "/src/pages/Flyer";
 import Cart from "/src/pages/Cart";
 import DataExtraction from "/src/pages/DataExtraction";
-import Profile from "/src/pages/Profile";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -21,7 +20,6 @@ ReactDOM.render(
         <Route path="DataExtraction" element={<DataExtraction />} />
         <Route path="/Flyer" element={<Flyer />} />
         <Route path="/Cart" element={<Cart />} />
-        <Route path="/Profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

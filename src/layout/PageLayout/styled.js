@@ -49,5 +49,5 @@ export const RightNavBarGrid = styled.div`
 export const ContentContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: ${navBarHeight + "px"}; /* take into account navbar height */
+  margin-top: 32px;
 `;

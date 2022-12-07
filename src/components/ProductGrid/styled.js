@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template: 500px / 300px 300px;
+  grid-template: 500px / 300px 300px 300px;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
 
@@ -11,7 +11,11 @@ export const GridContainer = styled.div`
   - USUALLY never hard-coded numbers, should be defined in theme of the app where all the 
   different supported screen widthes are
    */
-  @media (min-width: 950px) {
-    grid-template: 500px / 300px 300px 300px;
+  @media (max-width: 1100px) {
+    grid-template: 500px / 300px 300px;
+  }
+
+  @media (max-width: 600px) {
+    grid-template: 500px / 300px;
   }
 `;
